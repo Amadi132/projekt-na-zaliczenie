@@ -4,7 +4,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import Modal from './Modal'
 
 const days = [
   {
@@ -24,23 +23,23 @@ const days = [
       },
     ],
   },
-  // {
-  //   name: 'Speakers & Workshops',
-  //   date: 'April 5',
-  //   dateTime: '2022-04-05',
-  //   images: [
-  //     {
-  //       name: 'Damaris Kimura',
-  //       role: 'Senior Engineer at OCP',
-  //       image: '/images/assets/7s_greed.webp',
-  //     },
-  //     {
-  //       name: 'Ibrahim Frasch',
-  //       role: 'Programmer at Umbrella Corp',
-  //       image: '/images/assets/7s_greed.webp',
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Speakers & Workshops',
+    date: 'April 5',
+    dateTime: '2022-04-05',
+    images: [
+      {
+        name: 'Damaris Kimura',
+        role: 'Senior Engineer at OCP',
+        image: '/images/assets/7s_greed.webp',
+      },
+      {
+        name: 'Ibrahim Frasch',
+        role: 'Programmer at Umbrella Corp',
+        image: '/images/assets/7s_greed.webp',
+      },
+    ],
+  },
 ]
 
 export function Gallery() {
@@ -76,7 +75,7 @@ export function Gallery() {
         >
           <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
             <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
-            {/* <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
+            <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 days.map((day, dayIndex) => (
                   <div key={day.dateTime} className="relative lg:pl-8">
@@ -104,7 +103,7 @@ export function Gallery() {
                   </div>
                 ))
               }
-            </Tab.List> */}
+            </Tab.List>
           </div>
           <Tab.Panels className="lg:col-span-3">
             {days.map((day) => (
@@ -130,9 +129,10 @@ export function Gallery() {
                         className="absolute inset-0 bg-indigo-50"
                         style={{ clipPath: `url(#${id}-${imageIndex % 3})` }}
                       >
-                        <img
+                        <Image
                           className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
                           src={image.image}
+                          width="auto"
                           alt=""
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                         />
