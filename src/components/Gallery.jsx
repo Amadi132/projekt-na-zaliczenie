@@ -62,10 +62,6 @@ export function Gallery() {
     }
   }, [])
 
-  useEffect(() => {
-    
-  }, [openedImage, isOpened])
-
   return (
     <section
       id="gallery"
