@@ -9,7 +9,7 @@ export default function Home() {
   const paragraphs = [
     'WITAJ',
     'Krótki opis co znajdziemy na stronie:',
-    'Po prawej Github który przenosi do kodu źrudłowego strony, O mnie przenosi nas na stronę z informacjami o mnie. Napis Projket przenosi nas do storony tytułowej. Jest tu też kilka zdjęć',
+    'Po prawej Github który przenosi do kodu źródłowego strony, O mnie przenosi nas na stronę z informacjami o mnie. Napis Projekt przenosi nas do storony tytułowej. Jest tu też kilka zdjęć',
   ]
 
   return (
