@@ -7,9 +7,9 @@ import { Gallery } from '@/components/Gallery'
 
 export default function Home() {
   const paragraphs = [
-    'Welcome',
-    'tutaj cos innego',
-    'Home page !!! Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker',
+    'WITAJ',
+    'Krótki opis co znajdziemy na stronie:',
+    'Po prawej Github który przenosi do kodu źrudłowego strony, O mnie przenosi nas na stronę z informacjami o mnie. Napis Projket przenosi nas do storony tytułowej. Jest tu też kilka zdjęć',
   ]
 
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Hero headline="Welcome from home page" paragraphs={paragraphs} />
+        <Hero headline="MOJA STRONA" paragraphs={paragraphs} />
         <Gallery />
       </main>
       <Footer />
