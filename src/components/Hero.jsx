@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.png'
+import backgroundImage from '@/images/uroboros3.jpg'
 import Image from 'next/future/image'
 
 export function Hero({ headline, paragraphs }) {
