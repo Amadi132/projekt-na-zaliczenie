@@ -13,14 +13,34 @@ const days = [
     dateTime: '2022-04-04',
     images: [
       {
-        name: 'Steven McHail',
-        role: 'Designer at Globex Corporation',
-        image: '/images/assets/7s_greed.webp',
+        name: 'Van Hohenheim',
+        role: 'Ojciec',
+        image: '/images/assets/Van Hohenheim.png',
       },
       {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        image: '/images/assets/7s_greed.webp',
+        name: 'Trisha',
+        role: 'Matka',
+        image: '/images/assets/Trisha.png',
+      },
+      {
+        name: 'Edward',
+        role: 'Starszy syn',
+        image: '/images/assets/Edward.png',
+      },
+      {
+        name: 'Alfonso',
+        role: 'Młodszy syn',
+        image: '/images/assets/Alfonso.jpg',
+      },
+      {
+        name: 'Winry',
+        role: 'Mechanik',
+        image: '/images/assets/Winry.png',
+      },
+      {
+        name: 'Greed',
+        role: 'Homunculus',
+        image: '/images/assets/Greed.jpg',
       },
     ],
   },
