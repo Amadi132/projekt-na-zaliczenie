@@ -1,10 +1,9 @@
 import { useEffect, useId, useState } from 'react'
-import Image from 'next/future/image'
+// import Image from 'next/future/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import Modal from './Modal'
 
 const days = [
   {
@@ -91,14 +90,14 @@ export function Gallery() {
                         className={clsx(
                           'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
                           [
-                            'border-blue-300',
-                            'border-indigo-300',
-                            'border-sky-300',
+                            'border-red-300',
+                            'border-white-300',
+                            'border-red-300',
                           ][imageIndex % 3]
                         )}
                       />
                       <div
-                        className="absolute inset-0 bg-indigo-50"
+                        className="absolute inset-0 bg-black-50"
                         style={{ clipPath: `url(#${id}-${imageIndex % 3})` }}
                       >
                         <img
@@ -109,10 +108,10 @@ export function Gallery() {
                         />
                       </div>
                     </div>
-                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-slate-900">
+                    <h3 className="mt-8 font-display text-xl font-bold tracking-tight text-white">
                       {image.name}
                     </h3>
-                    <p className="mt-1 text-base tracking-tight text-slate-500">
+                    <p className="mt-1 text-base tracking-tight text-white">
                       {image.role}
                     </p>
                   </div>
